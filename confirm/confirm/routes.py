@@ -147,10 +147,10 @@ def reset_token(token):
     return render_template('reset_token.html', title='Reset Password', form=form)
 
 
-consumerKey = "hXaobeJVWNdJUQv0rwckeqOfF"
-consumerSecret = "XCfE9N7v8NVnrdvlMx0MUFHL7kYCR6qxxEWR7BX2AFqB8EwgkO"
-accessToken = "2865723461-CPWRYnviu6X2f7ugEPmhtuofgvNljL8Z0L7VZbs"
-accessTokenSecret = "QWM5dATE4d7wpZW59xITELkFUe8JXSQWnUqFgA2GFr6rL"
+consumerKey = ""
+consumerSecret = ""
+accessToken = ""
+accessTokenSecret = ""
 authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
 authenticate.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(authenticate, wait_on_rate_limit=True)
